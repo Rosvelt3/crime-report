@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mapa de crimenes</title>
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="/leaflet/leaflet.css">
+</head>
+
+<body>
+  <nav class="navbar is-info">
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">
+          Home
+        </a>
+        <a href="registrar.html" class="navbar-item">
+          Registrar crimen
+        </a>
+        <a href="consulta.html" class="navbar-item">
+          Consulta de crimenes
+        </a>
+        <a href="listado.html" class="navbar-item">
+          Listado zodiacal
+        </a>
+        <a href="mapa.html" class="navbar-item is-active">
+          Mapa de crimenes
+        </a>
+        <a href="acerca.html" class="navbar-item">
+          Acerca de
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="container is-fluid">
+      <h1 class="title">Mapa de crimenes</h1>
+      <div id="map" style="width: 100%; height: 500px;"></div>
+    </div>
+  </section>
+  <script src="leaflet/leaflet.js"></script>
+  <script src="js/map.js"></script>
+</body>
+
+</html>

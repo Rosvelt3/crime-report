@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registrar crimen</title>
+  <link rel="stylesheet" href="css/bulma.min.css">
+</head>
+
+<body>
+  <nav class="navbar is-info">
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">
+          Home
+        </a>
+        <a href="registrar.html" class="navbar-item is-active">
+          Registrar crimen
+        </a>
+        <a href="consulta.html" class="navbar-item">
+          Consulta de crimenes
+        </a>
+        <a href="listado.html" class="navbar-item">
+          Listado zodiacal
+        </a>
+        <a href="mapa.html" class="navbar-item">
+          Mapa de crimenes
+        </a>
+        <a href="acerca.html" class="navbar-item">
+          Acerca de
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="container is-fluid">
+      <h1 class="title">Registrar crimen</h1>
+      <form onsubmit="event.preventDefault(); onSubmit();">
+        <div class="field">
+          <label class="label">Fecha</label>
+          <div class="control">
+            <input type="date" class="input" id="date" value="2018-12-31">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Titulo</label>
+          <div class="control">
+            <input type="text" class="input" id="title">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Descripcion</label>
+          <div class="control">
+            <textarea class="textarea has-fixed-size" id="description"></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Latitud</label>
+          <div class="control">
+            <input type="number" class="input" id="latitude" step="any">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Longitud</label>
+          <div class="control">
+            <input type="number" class="input" id="longitude" step="any">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Telefono</label>
+          <div class="control">
+            <input type="tel" class="input" id="phone">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input type="email" class="input" id="email">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Nombre del que reporta:</label>
+          <div class="control">
+            <input type="text" class="input" id="name">
+          </div>
+        </div>
+        <div class="control has-text-centered">
+          <button class="button is-link" type="submit">
+            Registrar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script src="js/registerCrime.js"></script>
+</body>
+
+</html>
